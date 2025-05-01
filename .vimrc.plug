@@ -1,1 +1,47 @@
-/home/venom/.vimrc.plug
+call plug#begin('~/.vim/plugged')
+
+" Fugitive Vim Github Wrapper
+Plug 'tpope/vim-fugitive'
+
+" coc.nvim — LSP autocompletion GOAT
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+" Syntax support for Assembly
+Plug 'Shirk/vim-gas'
+
+" Shell script helpers
+Plug 'vim-syntastic/syntastic'
+Plug 'dense-analysis/ale'
+
+" GitGutter for added/modified/deleted signs
+Plug 'airblade/vim-gitgutter'
+
+" Live git blame
+Plug 'APZelos/blamer.nvim'
+
+" Statusline plugin to show current branch
+Plug 'itchyny/lightline.vim'
+
+" fzf pluging: for blazing fast search i guess
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
+
+" Themes
+Plug 'cocopon/iceberg.vim'
+Plug 'sainnhe/everforest'
+Plug 'elytraflyer/marsh.vim'
+Plug 'rose-pine/vim'
+
+" Filesystem
+Plug 'lambdalisue/fern.vim'
+Plug 'lambdalisue/fern-git-status.vim'        " Show git status
+Plug 'lambdalisue/nerdfont.vim'               " For icons
+Plug 'lambdalisue/fern-renderer-nerdfont.vim' " Renderer for icons
+Plug 'lambdalisue/fern-hijack.vim'            " Auto open fern on directory
+
+
+
+
+
+
+call plug#end()
